@@ -36,10 +36,5 @@
                 icon="AllIcons.Actions.BuildLoadChanges">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="WeighingNewGroup"/>
         </action>
-        <!-- Add your actions here -->
-        <action id="com.xdd.flutter_code_helper.NewGetX" class="actions.GenerateDirAction" text="GetX" description="Create getX template code"
-                icon="AllIcons.Actions.BuildLoadChanges">
-            <add-to-group group-id="NewGroup" anchor="first"/>
-        </action>
     </actions>
 </idea-plugin>

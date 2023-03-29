@@ -1,11 +1,11 @@
 package actions
 
-import utils.FileGenerator
-import utils.FileHelperNew
-import utils.PluginUtils.showNotify
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.PlatformDataKeys
+import utils.FileGenerator
+import utils.FileHelperNew
+import utils.PluginUtils.showNotify
 
 /**
  * 同步文件 文件夹到yaml

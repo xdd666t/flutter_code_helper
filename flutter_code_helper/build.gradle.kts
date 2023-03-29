@@ -14,13 +14,10 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2021.3.2")
-//    type.set("IC") // Target IDE Platform
-
     plugins.set(
         listOf("yaml", "java", "Dart:213.7433", "io.flutter:70.2.3", "Kotlin")
     )
 }
-
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -55,11 +52,13 @@ tasks.patchPluginXml {
 
     pluginDescription.set(
         """
-            <h2>flutter code helper</h2>
+            <h2>Flutter Code Helper</h2>
             <ul>
-                <h3>使用说明</h3>
-                <li>介绍....</a></li>
-                <li>介绍：<a href="https://juejin.cn/post/6984593635681517582"> 使用说明</a></li>
+                <h3>Introduction</h3>
+                <li>usage: You need to add the following to pubspec.yaml</a></li>
+                <br>code_helper:<br>
+                  # fill in the folders you need to automatically generate<br>
+                  auto_folder: ["assets/", "lib/widgets/"]
             </ul>
         """.trimIndent()
     )
@@ -68,9 +67,8 @@ tasks.patchPluginXml {
         """
             <h1>1.0</h1>
             <ul>
-                <li>You can generate a large number of GetX template codes</li>
-                <li>Improve development efficiency</li>
-                <li>If you have any questions, please give feedback</li>
+                <li>which can automatically generate defined folders and their subfolder</li>
+                <li>Preliminary completion function, </li>
             </ul>
         """.trimIndent()
     )

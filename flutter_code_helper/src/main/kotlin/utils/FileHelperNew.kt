@@ -7,11 +7,8 @@ import com.intellij.openapi.vfs.VirtualFile
 import io.flutter.pub.PubRoot
 import io.flutter.utils.FlutterModuleUtils
 import org.jetbrains.kotlin.idea.util.projectStructure.allModules
-import org.jetbrains.kotlin.konan.file.File
 import org.yaml.snakeyaml.Yaml
 import java.io.FileInputStream
-import java.util.*
-import java.util.regex.Pattern
 
 /**
  * 基于Module来处理Assets
@@ -37,6 +34,30 @@ object FileHelperNew {
         }
         return folders
     }
+
+    /**
+     * 获取需要自动生成目录路径
+     */
+    @JvmStatic
+    fun getAutoFolder(project: Project): MutableList<String> {
+        var folderList = mutableListOf<String>()
+
+        val assets = getAssets(project)
+        for (config in assets) {
+            val list = try {
+                readSetting(config, Constants.key_auto_folder) as MutableList<String>?
+                    ?: mutableListOf()
+            } catch (e: Exception) {
+                mutableListOf()
+            }
+            if (list.isNotEmpty()) {
+                folderList = list
+                break
+            }
+        }
+        return folderList
+    }
+
 
     @JvmStatic
     fun shouldActivateFor(project: Project): Boolean {
@@ -110,105 +131,11 @@ object FileHelperNew {
         return null
     }
 
-    /**
-     * 是否开启了自动检测
-     */
-    fun isAutoDetectionEnable(config: ModulePubSpecConfig): Boolean {
-        return readSetting(config, Constants.KEY_AUTO_DETECTION) as Boolean? ?: true
-    }
-
-    /**
-     * 是否根据父文件夹命名 默认true
-     */
-    fun isNamedWithParent(config: ModulePubSpecConfig): Boolean {
-        return readSetting(config, Constants.KEY_NAMED_WITH_PARENT) as Boolean?
-            ?: true
-    }
-
-    /**
-     * 读取生成的类名配置
-     */
-    fun getGeneratedClassName(config: ModulePubSpecConfig): String {
-        return readSetting(config, Constants.KEY_CLASS_NAME) as String?
-            ?: Constants.default_output_dir
-    }
-
-    /**
-     * 读取文件分割配置
-     */
-    fun getFilenameSplitPattern(config: ModulePubSpecConfig): String {
-        return try {
-            val pattern =
-                readSetting(config, Constants.FILENAME_SPLIT_PATTERN) as String?
-                    ?: Constants.default_filename_split_pattern
-            Pattern.compile(pattern)
-            pattern
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Constants.default_filename_split_pattern
-        }
-    }
-
-    /**
-     * 读取忽略文件目录
-     */
-    fun getPathIgnore(config: ModulePubSpecConfig): List<String> {
-        return try {
-            val paths =
-                readSetting(config, Constants.PATH_IGNORE) as List<String>?
-                    ?: emptyList()
-            paths
-        } catch (e: Exception) {
-            e.printStackTrace()
-            emptyList()
-        }
-    }
-
-    /**
-     * 获取generated自动生成目录
-     * 从yaml中读取
-     */
-    private fun getGeneratedFilePath(config: ModulePubSpecConfig): VirtualFile {
-        return config.pubRoot.lib?.let { lib ->
-            // 没有配置则返回默认path
-            val filePath: String = readSetting(config, Constants.KEY_OUTPUT_DIR) as String?
-                ?: Constants.default_output_dir
-            println("getGeneratedFilePath $filePath")
-            if (!filePath.contains(File.separator)) {
-                return@let lib.findOrCreateChildDir(lib, filePath)
-            } else {
-                var file = lib
-                filePath.split(File.separator).forEach { dir ->
-                    if (dir.isNotEmpty()) {
-                        file = file.findOrCreateChildDir(file, dir)
-                    }
-                }
-                return@let file
-            }
-        }!!
-    }
 
     private fun VirtualFile.findOrCreateChildDir(requestor: Any, name: String): VirtualFile {
         val child = findChild(name)
         return child ?: createChildDirectory(requestor, name)
     }
-
-    /**
-     * 获取需要生成的文件 如果没有则会创建文件
-     */
-    fun getGeneratedFile(config: ModulePubSpecConfig): VirtualFile {
-        return getGeneratedFilePath(config).let {
-            val configName = getGeneratedFileName(config)
-            return@let it.findOrCreateChildData(
-                it,
-                "$configName.dart"
-            )
-        }
-    }
-
-    fun getGeneratedFileName(config: ModulePubSpecConfig): String =
-        readSetting(config, Constants.KEY_OUTPUT_FILENAME) as? String
-            ?: Constants.default_class_name.lowercase()
 
 }
 

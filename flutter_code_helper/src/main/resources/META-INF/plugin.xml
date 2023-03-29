@@ -2,7 +2,7 @@
 <idea-plugin>
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Flutter_code_helper</name>
+    <name>Flutter Code Helper</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="xdd666@foxmail.com" url="https://github.com/xdd666t">xdd666</vendor>
@@ -26,11 +26,6 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="action.generate" class="actions.GenerateAction" text="Generate Flutter Assets"
-                description="Generate Assets class ">
-            <add-to-group group-id="BuildMenu" anchor="last"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="alt g"/>
-        </action>
         <action id="com.xdd.flutter_code_helper.GenerateDirAction" class="actions.GenerateDirAction"
                 text="Flutter: Configuring Paths" description="Configuring Paths in pubspec.yaml"
                 icon="AllIcons.Actions.BuildLoadChanges">

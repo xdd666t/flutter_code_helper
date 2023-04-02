@@ -75,7 +75,6 @@ class PsiTreeListener(private val project: Project) : PsiTreeChangeListener {
                         }
                     }, 300)
                 }
-                break
             }
         }
     }

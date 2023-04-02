@@ -1,0 +1,265 @@
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="" path="ActionManager" hit="" />
+    <option name="a" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="an" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="android" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="app" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="attach" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="debugger" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="embedded" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="flutter" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="in" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="process" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="to" path="ActionManager" hit="Attach debugger to a Flutter process embedded in an Android app" />
+    <option name="aar" path="ActionManager" hit="Build AAR" />
+    <option name="build" path="ActionManager" hit="Build AAR" />
+    <option name="apk" path="ActionManager" hit="Build APK" />
+    <option name="build" path="ActionManager" hit="Build APK" />
+    <option name="app" path="ActionManager" hit="Build App Bundle" />
+    <option name="build" path="ActionManager" hit="Build App Bundle" />
+    <option name="bundle" path="ActionManager" hit="Build App Bundle" />
+    <option name="build" path="ActionManager" hit="Build Web" />
+    <option name="web" path="ActionManager" hit="Build Web" />
+    <option name="build" path="ActionManager" hit="Build iOS" />
+    <option name="ios" path="ActionManager" hit="Build iOS" />
+    <option name="a" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="app" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="apple" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="building" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="distribution" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="flutter" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="for" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="store" path="ActionManager" hit="Building a Flutter app for Apple App Store distribution" />
+    <option name="a" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="app" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="building" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="distribution" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="flutter" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="for" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="google" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="play" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="store" path="ActionManager" hit="Building a Flutter app for Google Play Store distribution" />
+    <option name="a" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="app" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="building" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="distribution" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="flutter" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="for" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="general" path="ActionManager" hit="Building a Flutter app for general distribution" />
+    <option name="a" path="ActionManager" hit="Building a Flutter app for web" />
+    <option name="app" path="ActionManager" hit="Building a Flutter app for web" />
+    <option name="building" path="ActionManager" hit="Building a Flutter app for web" />
+    <option name="flutter" path="ActionManager" hit="Building a Flutter app for web" />
+    <option name="for" path="ActionManager" hit="Building a Flutter app for web" />
+    <option name="web" path="ActionManager" hit="Building a Flutter app for web" />
+    <option name="a" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="add" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="android" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="app" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="building" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="flutter" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="for" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="module" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="to" path="ActionManager" hit="Building a Flutter module for Android add-to-app" />
+    <option name="extract" path="ActionManager" hit="Extract Flutter Widget..." />
+    <option name="flutter" path="ActionManager" hit="Extract Flutter Widget..." />
+    <option name="widget" path="ActionManager" hit="Extract Flutter Widget..." />
+    <option name="flutter" path="ActionManager" hit="Flutter" />
+    <option name="attach" path="ActionManager" hit="Flutter Attach" />
+    <option name="flutter" path="ActionManager" hit="Flutter Attach" />
+    <option name="clean" path="ActionManager" hit="Flutter Clean" />
+    <option name="flutter" path="ActionManager" hit="Flutter Clean" />
+    <option name="device" path="ActionManager" hit="Flutter Device Selection" />
+    <option name="flutter" path="ActionManager" hit="Flutter Device Selection" />
+    <option name="selection" path="ActionManager" hit="Flutter Device Selection" />
+    <option name="doctor" path="ActionManager" hit="Flutter Doctor" />
+    <option name="flutter" path="ActionManager" hit="Flutter Doctor" />
+    <option name="flutter" path="ActionManager" hit="Flutter Hot Reload" />
+    <option name="hot" path="ActionManager" hit="Flutter Hot Reload" />
+    <option name="reload" path="ActionManager" hit="Flutter Hot Reload" />
+    <option name="all" path="ActionManager" hit="Flutter Hot Reload (All Devices)" />
+    <option name="devices" path="ActionManager" hit="Flutter Hot Reload (All Devices)" />
+    <option name="flutter" path="ActionManager" hit="Flutter Hot Reload (All Devices)" />
+    <option name="hot" path="ActionManager" hit="Flutter Hot Reload (All Devices)" />
+    <option name="reload" path="ActionManager" hit="Flutter Hot Reload (All Devices)" />
+    <option name="flutter" path="ActionManager" hit="Flutter Hot Restart" />
+    <option name="hot" path="ActionManager" hit="Flutter Hot Restart" />
+    <option name="restart" path="ActionManager" hit="Flutter Hot Restart" />
+    <option name="all" path="ActionManager" hit="Flutter Hot Restart (All Devices)" />
+    <option name="devices" path="ActionManager" hit="Flutter Hot Restart (All Devices)" />
+    <option name="flutter" path="ActionManager" hit="Flutter Hot Restart (All Devices)" />
+    <option name="hot" path="ActionManager" hit="Flutter Hot Restart (All Devices)" />
+    <option name="restart" path="ActionManager" hit="Flutter Hot Restart (All Devices)" />
+    <option name="flutter" path="ActionManager" hit="Flutter Plugin Help" />
+    <option name="help" path="ActionManager" hit="Flutter Plugin Help" />
+    <option name="plugin" path="ActionManager" hit="Flutter Plugin Help" />
+    <option name="flutter" path="ActionManager" hit="Flutter Pub Get" />
+    <option name="get" path="ActionManager" hit="Flutter Pub Get" />
+    <option name="pub" path="ActionManager" hit="Flutter Pub Get" />
+    <option name="flutter" path="ActionManager" hit="Flutter Pub Upgrade" />
+    <option name="pub" path="ActionManager" hit="Flutter Pub Upgrade" />
+    <option name="upgrade" path="ActionManager" hit="Flutter Pub Upgrade" />
+    <option name="flutter" path="ActionManager" hit="Flutter Tools" />
+    <option name="tools" path="ActionManager" hit="Flutter Tools" />
+    <option name="flutter" path="ActionManager" hit="Flutter Upgrade" />
+    <option name="upgrade" path="ActionManager" hit="Flutter Upgrade" />
+    <option name="getting" path="ActionManager" hit="Getting Started" />
+    <option name="started" path="ActionManager" hit="Getting Started" />
+    <option name="all" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="apps" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="changes" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="connected" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="devices" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="flutter" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="hot" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="into" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="on" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="reload" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="running" path="ActionManager" hit="Hot reload changes into all running Flutter apps on all connected devices" />
+    <option name="app" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="changes" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="flutter" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="hot" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="into" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="reload" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="running" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="the" path="ActionManager" hit="Hot reload changes into the running Flutter app" />
+    <option name="jump" path="ActionManager" hit="Jump to Source" />
+    <option name="source" path="ActionManager" hit="Jump to Source" />
+    <option name="to" path="ActionManager" hit="Jump to Source" />
+    <option name="jump" path="ActionManager" hit="Jump to Type Source" />
+    <option name="source" path="ActionManager" hit="Jump to Type Source" />
+    <option name="to" path="ActionManager" hit="Jump to Type Source" />
+    <option name="type" path="ActionManager" hit="Jump to Type Source" />
+    <option name="a" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="android" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="as" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="edit" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="launch" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="level" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="module" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="project" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="studio" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="the" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="to" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="top" path="ActionManager" hit="Launch Android Studio to edit the Android module as a top-level project" />
+    <option name="a" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="appcode" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="as" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="edit" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="ios" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="launch" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="level" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="module" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="project" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="the" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="to" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="top" path="ActionManager" hit="Launch AppCode to edit the iOS module as a top-level project" />
+    <option name="a" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="as" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="edit" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="ios" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="launch" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="level" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="module" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="project" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="the" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="to" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="top" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="xcode" path="ActionManager" hit="Launch Xcode to edit the iOS module as a top-level project" />
+    <option name="android" path="ActionManager" hit="Open Android module in Android Studio" />
+    <option name="in" path="ActionManager" hit="Open Android module in Android Studio" />
+    <option name="module" path="ActionManager" hit="Open Android module in Android Studio" />
+    <option name="open" path="ActionManager" hit="Open Android module in Android Studio" />
+    <option name="studio" path="ActionManager" hit="Open Android module in Android Studio" />
+    <option name="devtools" path="ActionManager" hit="Open Flutter DevTools" />
+    <option name="flutter" path="ActionManager" hit="Open Flutter DevTools" />
+    <option name="open" path="ActionManager" hit="Open Flutter DevTools" />
+    <option name="appcode" path="ActionManager" hit="Open iOS module in AppCode" />
+    <option name="in" path="ActionManager" hit="Open iOS module in AppCode" />
+    <option name="ios" path="ActionManager" hit="Open iOS module in AppCode" />
+    <option name="module" path="ActionManager" hit="Open iOS module in AppCode" />
+    <option name="open" path="ActionManager" hit="Open iOS module in AppCode" />
+    <option name="in" path="ActionManager" hit="Open iOS module in Xcode" />
+    <option name="ios" path="ActionManager" hit="Open iOS module in Xcode" />
+    <option name="module" path="ActionManager" hit="Open iOS module in Xcode" />
+    <option name="open" path="ActionManager" hit="Open iOS module in Xcode" />
+    <option name="xcode" path="ActionManager" hit="Open iOS module in Xcode" />
+    <option name="feedback" path="ActionManager" hit="Provide feedback for the Flutter plugin" />
+    <option name="flutter" path="ActionManager" hit="Provide feedback for the Flutter plugin" />
+    <option name="for" path="ActionManager" hit="Provide feedback for the Flutter plugin" />
+    <option name="plugin" path="ActionManager" hit="Provide feedback for the Flutter plugin" />
+    <option name="provide" path="ActionManager" hit="Provide feedback for the Flutter plugin" />
+    <option name="the" path="ActionManager" hit="Provide feedback for the Flutter plugin" />
+    <option name="refresh" path="ActionManager" hit="Refresh" />
+    <option name="device" path="ActionManager" hit="Refresh Device List" />
+    <option name="list" path="ActionManager" hit="Refresh Device List" />
+    <option name="refresh" path="ActionManager" hit="Refresh Device List" />
+    <option name="device" path="ActionManager" hit="Refresh device list" />
+    <option name="list" path="ActionManager" hit="Refresh device list" />
+    <option name="refresh" path="ActionManager" hit="Refresh device list" />
+    <option name="daemon" path="ActionManager" hit="Restart Flutter Daemon" />
+    <option name="flutter" path="ActionManager" hit="Restart Flutter Daemon" />
+    <option name="restart" path="ActionManager" hit="Restart Flutter Daemon" />
+    <option name="all" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="apps" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="connected" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="devices" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="flutter" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="on" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="restart" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="running" path="ActionManager" hit="Restart all running Flutter apps on all connected devices" />
+    <option name="app" path="ActionManager" hit="Restart the Flutter app" />
+    <option name="flutter" path="ActionManager" hit="Restart the Flutter app" />
+    <option name="restart" path="ActionManager" hit="Restart the Flutter app" />
+    <option name="the" path="ActionManager" hit="Restart the Flutter app" />
+    <option name="clean" path="ActionManager" hit="Run 'flutter clean'" />
+    <option name="flutter" path="ActionManager" hit="Run 'flutter clean'" />
+    <option name="run" path="ActionManager" hit="Run 'flutter clean'" />
+    <option name="doctor" path="ActionManager" hit="Run 'flutter doctor'" />
+    <option name="flutter" path="ActionManager" hit="Run 'flutter doctor'" />
+    <option name="run" path="ActionManager" hit="Run 'flutter doctor'" />
+    <option name="flutter" path="ActionManager" hit="Run 'flutter pub get'" />
+    <option name="get" path="ActionManager" hit="Run 'flutter pub get'" />
+    <option name="pub" path="ActionManager" hit="Run 'flutter pub get'" />
+    <option name="run" path="ActionManager" hit="Run 'flutter pub get'" />
+    <option name="flutter" path="ActionManager" hit="Run 'flutter pub upgrade'" />
+    <option name="pub" path="ActionManager" hit="Run 'flutter pub upgrade'" />
+    <option name="run" path="ActionManager" hit="Run 'flutter pub upgrade'" />
+    <option name="upgrade" path="ActionManager" hit="Run 'flutter pub upgrade'" />
+    <option name="flutter" path="ActionManager" hit="Run 'flutter upgrade'" />
+    <option name="run" path="ActionManager" hit="Run 'flutter upgrade'" />
+    <option name="upgrade" path="ActionManager" hit="Run 'flutter upgrade'" />
+    <option name="app" path="ActionManager" hit="Run Flutter app in profile mode" />
+    <option name="flutter" path="ActionManager" hit="Run Flutter app in profile mode" />
+    <option name="in" path="ActionManager" hit="Run Flutter app in profile mode" />
+    <option name="mode" path="ActionManager" hit="Run Flutter app in profile mode" />
+    <option name="profile" path="ActionManager" hit="Run Flutter app in profile mode" />
+    <option name="run" path="ActionManager" hit="Run Flutter app in profile mode" />
+    <option name="app" path="ActionManager" hit="Run Flutter app in release mode" />
+    <option name="flutter" path="ActionManager" hit="Run Flutter app in release mode" />
+    <option name="in" path="ActionManager" hit="Run Flutter app in release mode" />
+    <option name="mode" path="ActionManager" hit="Run Flutter app in release mode" />
+    <option name="release" path="ActionManager" hit="Run Flutter app in release mode" />
+    <option name="run" path="ActionManager" hit="Run Flutter app in release mode" />
+    <option name="flutter" path="ActionManager" hit="Run in Flutter profile mode" />
+    <option name="in" path="ActionManager" hit="Run in Flutter profile mode" />
+    <option name="mode" path="ActionManager" hit="Run in Flutter profile mode" />
+    <option name="profile" path="ActionManager" hit="Run in Flutter profile mode" />
+    <option name="run" path="ActionManager" hit="Run in Flutter profile mode" />
+    <option name="flutter" path="ActionManager" hit="Run in Flutter release mode" />
+    <option name="in" path="ActionManager" hit="Run in Flutter release mode" />
+    <option name="mode" path="ActionManager" hit="Run in Flutter release mode" />
+    <option name="release" path="ActionManager" hit="Run in Flutter release mode" />
+    <option name="run" path="ActionManager" hit="Run in Flutter release mode" />
+    <option name="feedback" path="ActionManager" hit="Submit Feedback..." />
+    <option name="submit" path="ActionManager" hit="Submit Feedback..." />
+    <option name="documentation" path="ActionManager" hit="View the online getting started documentation" />
+    <option name="getting" path="ActionManager" hit="View the online getting started documentation" />
+    <option name="online" path="ActionManager" hit="View the online getting started documentation" />
+    <option name="started" path="ActionManager" hit="View the online getting started documentation" />
+    <option name="the" path="ActionManager" hit="View the online getting started documentation" />
+    <option name="view" path="ActionManager" hit="View the online getting started documentation" />
+  </configurable>
+</options>

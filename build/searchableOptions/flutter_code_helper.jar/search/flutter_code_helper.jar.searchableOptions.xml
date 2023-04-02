@@ -1,0 +1,12 @@
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="configuring" path="ActionManager" hit="Configuring Paths in pubspec.yaml" />
+    <option name="in" path="ActionManager" hit="Configuring Paths in pubspec.yaml" />
+    <option name="paths" path="ActionManager" hit="Configuring Paths in pubspec.yaml" />
+    <option name="pubspec" path="ActionManager" hit="Configuring Paths in pubspec.yaml" />
+    <option name="yaml" path="ActionManager" hit="Configuring Paths in pubspec.yaml" />
+    <option name="configuring" path="ActionManager" hit="Flutter: Configuring Paths" />
+    <option name="flutter" path="ActionManager" hit="Flutter: Configuring Paths" />
+    <option name="paths" path="ActionManager" hit="Flutter: Configuring Paths" />
+  </configurable>
+</options>

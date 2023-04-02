@@ -1,0 +1,12 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern="test1" type="AUTO_DETECTED" />
+      <mapping pattern="1" type="AUTO_DETECTED" />
+      <mapping pattern="2" type="AUTO_DETECTED" />
+      <mapping pattern="3" type="AUTO_DETECTED" />
+      <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
+      <removed_mapping ext="psd" approved="true" type="Image" />
+    </extensionMap>
+  </component>
+</application>

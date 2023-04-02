@@ -1,0 +1,506 @@
+{
+  "appInfo" : {
+    "build" : "213.6777.52",
+    "buildDate" : "2022-01-28T03:47:10.757Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2023-03-28T14:45:43.087651Z",
+    "os" : "macOS 13.2.1",
+    "runtime" : "JetBrains s.r.o. 11.0.13 11.0.13+7-b1751.25"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 788529152,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "flutter_dojo-master",
+    "times" : {
+      "indexingReason" : "changes in: \"Library Dart Packages\"",
+      "wasFullIndexing" : false,
+      "totalUpdatingTime" : 6897174625,
+      "indexingTime" : 6370311000,
+      "contentLoadingTime" : 195806905,
+      "scanFilesTime" : 504354000,
+      "pushPropertiesTime" : 6000,
+      "indexExtensionsTime" : 0,
+      "updatingStart" : "2023-03-28T14:45:36.190278Z",
+      "updatingEnd" : "2023-03-28T14:45:43.087382Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 3010,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 2949,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 2949
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Dart",
+      "partOfTotalProcessingTime" : {
+        "part" : 24950271808,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 762408121,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 2904,
+      "totalFilesSize" : 41265652,
+      "indexingSpeed" : {
+        "totalBytes" : 41265652,
+        "totalTime" : 24950271808
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 2904,
+        "totalFilesSize" : 41265652,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 24950271808,
+          "total" : 24950271808
+        }
+      } ]
+    }, {
+      "fileType" : "YAML",
+      "partOfTotalProcessingTime" : {
+        "part" : 138357082,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 5571124,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 32,
+      "totalFilesSize" : 223473,
+      "indexingSpeed" : {
+        "totalBytes" : 223473,
+        "totalTime" : 138357082
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 32,
+        "totalFilesSize" : 223473,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 138357082,
+          "total" : 138357082
+        }
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalProcessingTime" : {
+        "part" : 76034499,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 3544792,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : 229875,
+      "indexingSpeed" : {
+        "totalBytes" : 229875,
+        "totalTime" : 76034499
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 229875,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 76034499,
+          "total" : 76034499
+        }
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalProcessingTime" : {
+        "part" : 9570334,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 992376,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : 3405,
+      "indexingSpeed" : {
+        "totalBytes" : 3405,
+        "totalTime" : 9570334
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 3405,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9570334,
+          "total" : 9570334
+        }
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 5681250,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 414792,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : 31279,
+      "indexingSpeed" : {
+        "totalBytes" : 31279,
+        "totalTime" : 5681250
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 31279,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5681250,
+          "total" : 5681250
+        }
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalProcessingTime" : {
+        "part" : 4180000,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1193250,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 1936,
+      "indexingSpeed" : {
+        "totalBytes" : 1936,
+        "totalTime" : 4180000
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1936,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4180000,
+          "total" : 4180000
+        }
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalProcessingTime" : {
+        "part" : 3503458,
+        "total" : 25187598431
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 95333,
+        "total" : 774219788
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 4175,
+      "indexingSpeed" : {
+        "totalBytes" : 4175,
+        "totalTime" : 3503458
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Dart Packages",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 4175,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3503458,
+          "total" : 3503458
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "DartImportIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 15602720388,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2901,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41203810,
+      "indexingSpeed" : {
+        "totalBytes" : 41203810,
+        "totalTime" : 15602720388
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 1077622510,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2947,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41702694,
+      "indexingSpeed" : {
+        "totalBytes" : 41702694,
+        "totalTime" : 1077622510
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 994570006,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2948,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41736179,
+      "indexingSpeed" : {
+        "totalBytes" : 41736179,
+        "totalTime" : 994570006
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DartSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 306741385,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2902,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41208551,
+      "indexingSpeed" : {
+        "totalBytes" : 41208551,
+        "totalTime" : 306741385
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DartClassIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 293553404,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2901,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41203810,
+      "indexingSpeed" : {
+        "totalBytes" : 41203810,
+        "totalTime" : 293553404
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DartPathIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 281283750,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2901,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41203810,
+      "indexingSpeed" : {
+        "totalBytes" : 41203810,
+        "totalTime" : 281283750
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DartComponentIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 272095698,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2902,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41208551,
+      "indexingSpeed" : {
+        "totalBytes" : 41208551,
+        "totalTime" : 272095698
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DartLibraryIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 253960792,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 2901,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 41203810,
+      "indexingSpeed" : {
+        "totalBytes" : 41203810,
+        "totalTime" : 253960792
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "yaml.keys.name",
+      "partOfTotalIndexingTime" : {
+        "part" : 69411829,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 32,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 223473,
+      "indexingSpeed" : {
+        "totalBytes" : 223473,
+        "totalTime" : 69411829
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 7249459,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 5,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5341,
+      "indexingSpeed" : {
+        "totalBytes" : 5341,
+        "totalTime" : 7249459
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 1957749,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 4,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 229875,
+      "indexingSpeed" : {
+        "totalBytes" : 229875,
+        "totalTime" : 1957749
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "html5.custom.attributes.index",
+      "partOfTotalIndexingTime" : {
+        "part" : 692875,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1936,
+      "indexingSpeed" : {
+        "totalBytes" : 1936,
+        "totalTime" : 692875
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : {
+        "part" : 171458,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 4175,
+      "indexingSpeed" : {
+        "totalBytes" : 4175,
+        "totalTime" : 171458
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : {
+        "part" : 49583,
+        "total" : 19162080886
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1936,
+      "indexingSpeed" : {
+        "totalBytes" : 1936,
+        "totalTime" : 49583
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Library Dart Packages",
+      "numberOfScannedFiles" : 3010,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 2949,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 138171884,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 55777434,
+      "timeIndexingWithoutContent" : 27649189
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Library Dart Packages",
+      "totalNumberOfIndexedFiles" : 2949,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : 6370162292,
+      "contentLoadingTime" : 195806905,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "search_ellipsis.g.dart",
+        "processingTime" : 672579833,
+        "indexingTime" : 666265749,
+        "contentLoadingTime" : 944667
+      }, {
+        "fileName" : "icons.dart",
+        "processingTime" : 1223324208,
+        "indexingTime" : 644155624,
+        "contentLoadingTime" : 6071708
+      }, {
+        "fileName" : "html_dart2js.dart",
+        "processingTime" : 915993917,
+        "indexingTime" : 751992957,
+        "contentLoadingTime" : 5303667
+      } ]
+    } ]
+  }
+}

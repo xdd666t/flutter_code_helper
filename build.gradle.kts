@@ -44,11 +44,11 @@ tasks {
     }
 }
 
+version = 1.0
 tasks.patchPluginXml {
-    sinceBuild.set("200.*")
-    untilBuild.set("*.*")
+    sinceBuild.set("200")
+    untilBuild.set("")
     pluginId.set("com.xdd.flutter_code_helper")
-    version.set("1.0")
 
     pluginDescription.set(
         """

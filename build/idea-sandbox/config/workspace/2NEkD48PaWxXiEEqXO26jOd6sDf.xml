@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="82" selection-start-line="82" selection-end-line="83" selection-end-column="42" />
+            <state relative-caret-position="384">
+              <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -26,10 +26,10 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Dart">
-      <summary usageCount="12" lastUsed="1680103163553" />
+      <summary usageCount="13" lastUsed="1680440223571" />
     </fileType>
     <fileType name="YAML">
-      <summary usageCount="12" lastUsed="1680103163590" />
+      <summary usageCount="13" lastUsed="1680440223623" />
     </fileType>
   </component>
   <component name="IdeDocumentHistory">
@@ -111,8 +111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="82" selection-start-line="82" selection-end-line="83" selection-end-column="42" />
+        <state relative-caret-position="384">
+          <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
         </state>
       </provider>
     </entry>

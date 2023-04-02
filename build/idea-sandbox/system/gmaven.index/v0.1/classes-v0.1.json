@@ -11311,42 +11311,42 @@
     {
       "groupId": "com.android.tools",
       "artifactId": "desugar_jdk_libs",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools",
       "artifactId": "desugar_jdk_libs_configuration",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools",
       "artifactId": "desugar_jdk_libs_configuration_minimal",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools",
       "artifactId": "desugar_jdk_libs_configuration_nio",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools",
       "artifactId": "desugar_jdk_libs_minimal",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools",
       "artifactId": "desugar_jdk_libs_nio",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -11486,7 +11486,7 @@
     {
       "groupId": "com.android.tools.build",
       "artifactId": "aapt2",
-      "version": "8.1.0-alpha10-9603961",
+      "version": "8.1.0-alpha11-9603961",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -11829,14 +11829,14 @@
     {
       "groupId": "com.android.tools.utp",
       "artifactId": "android-test-plugin-host-apk-installer",
-      "version": "31.1.0-alpha10",
+      "version": "31.1.0-alpha11",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools.utp",
       "artifactId": "android-test-plugin-host-apk-installer-proto",
-      "version": "31.1.0-alpha10",
+      "version": "31.1.0-alpha11",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -11871,14 +11871,14 @@
     {
       "groupId": "com.android.tools.utp",
       "artifactId": "android-test-plugin-host-emulator-control",
-      "version": "31.1.0-alpha10",
+      "version": "31.1.0-alpha11",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.android.tools.utp",
       "artifactId": "android-test-plugin-host-emulator-control-proto",
-      "version": "31.1.0-alpha10",
+      "version": "31.1.0-alpha11",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -11892,7 +11892,7 @@
     {
       "groupId": "com.android.tools.utp",
       "artifactId": "android-test-plugin-host-logcat-proto",
-      "version": "31.1.0-alpha10",
+      "version": "31.1.0-alpha11",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -12045,9 +12045,10 @@
     {
       "groupId": "com.google.ads.interactivemedia.v3",
       "artifactId": "interactivemedia",
-      "version": "3.29.0",
+      "version": "3.30.0",
       "ktxTargets": [],
       "fqcns": [
+        "com.google.ads.interactivemedia.omid.library.adsession.FriendlyObstructionPurpose",
         "com.google.ads.interactivemedia.v3.api.Ad",
         "com.google.ads.interactivemedia.v3.api.AdDisplayContainer",
         "com.google.ads.interactivemedia.v3.api.AdError",
@@ -12062,6 +12063,7 @@
         "com.google.ads.interactivemedia.v3.api.AdsRequest",
         "com.google.ads.interactivemedia.v3.api.BaseDisplayContainer",
         "com.google.ads.interactivemedia.v3.api.BaseManager",
+        "com.google.ads.interactivemedia.v3.api.BaseRequest",
         "com.google.ads.interactivemedia.v3.api.CompanionAd",
         "com.google.ads.interactivemedia.v3.api.CompanionAdSlot",
         "com.google.ads.interactivemedia.v3.api.CuePoint",
@@ -12083,6 +12085,7 @@
         "com.google.ads.interactivemedia.v3.api.player.VideoProgressUpdate",
         "com.google.ads.interactivemedia.v3.api.player.VideoStreamPlayer",
         "com.google.ads.interactivemedia.v3.api.player.VolumeProvider",
+        "com.google.ads.interactivemedia.v3.api.signals.SecureSignals",
         "com.google.ads.interactivemedia.v3.api.signals.SecureSignalsAdapter",
         "com.google.ads.interactivemedia.v3.api.signals.SecureSignalsCollectSignalsCallback",
         "com.google.ads.interactivemedia.v3.api.signals.SecureSignalsInitializeCallback"
@@ -12119,7 +12122,7 @@
     {
       "groupId": "com.google.ads.mediation",
       "artifactId": "fyber",
-      "version": "8.2.2.0",
+      "version": "8.2.2.1",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -12182,7 +12185,7 @@
     {
       "groupId": "com.google.ads.mediation",
       "artifactId": "pangle",
-      "version": "5.0.1.0.0",
+      "version": "5.0.1.1.0",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -12773,7 +12776,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-ads",
-      "version": "21.5.0",
+      "version": "22.0.0",
       "ktxTargets": [],
       "fqcns": [
         "com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor"
@@ -12782,7 +12785,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-ads-base",
-      "version": "21.5.0",
+      "version": "22.0.0",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -12805,7 +12808,7 @@
     {
       "groupId": "com.google.android.gms",
       "artifactId": "play-services-ads-lite",
-      "version": "21.5.0",
+      "version": "22.0.0",
       "ktxTargets": [],
       "fqcns": [
         "com.google.ads.mediation.AbstractAdViewAdapter",
@@ -16595,14 +16598,14 @@
     {
       "groupId": "com.google.firebase",
       "artifactId": "firebase-ads",
-      "version": "21.5.0",
+      "version": "22.0.0",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.firebase",
       "artifactId": "firebase-ads-lite",
-      "version": "21.5.0",
+      "version": "22.0.0",
       "ktxTargets": [],
       "fqcns": []
     },
@@ -19890,28 +19893,28 @@
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "tasks-audio",
-      "version": "0.1.0-alpha-6",
+      "version": "0.1.0-alpha-7",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "tasks-core",
-      "version": "0.1.0-alpha-6",
+      "version": "0.1.0-alpha-7",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "tasks-text",
-      "version": "0.1.0-alpha-6",
+      "version": "0.1.0-alpha-7",
       "ktxTargets": [],
       "fqcns": []
     },
     {
       "groupId": "com.google.mediapipe",
       "artifactId": "tasks-vision",
-      "version": "0.1.0-alpha-6",
+      "version": "0.1.0-alpha-7",
       "ktxTargets": [],
       "fqcns": []
     },

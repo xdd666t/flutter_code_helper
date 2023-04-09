@@ -12,8 +12,6 @@ import java.util.*
 import kotlin.concurrent.timerTask
 
 class PsiTreeListener(private val project: Project) : PsiTreeChangeListener {
-    private val fileGenerator = FileGenerator(project)
-
     override fun beforePropertyChange(event: PsiTreeChangeEvent) {
     }
 

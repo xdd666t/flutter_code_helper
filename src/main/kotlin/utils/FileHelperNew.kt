@@ -8,6 +8,7 @@ import io.flutter.pub.PubRoot
 import io.flutter.utils.FlutterModuleUtils
 import org.jetbrains.kotlin.idea.util.projectStructure.allModules
 import org.yaml.snakeyaml.Yaml
+import java.io.File
 import java.io.FileInputStream
 
 /**
@@ -19,14 +20,14 @@ object FileHelperNew {
      * 获取所有可用的Flutter Module的Asset配置
      */
     @JvmStatic
-    fun getAssets(project: Project): List<ModulePubSpecConfig> {
+    fun getPubspecConfigList(project: Project): List<PubspecConfig> {
         val modules = project.allModules()
-        val folders = mutableListOf<ModulePubSpecConfig>()
+        val folders = mutableListOf<PubspecConfig>()
         for (module in modules) {
             if (FlutterModuleUtils.isFlutterModule(module)) {
                 val moduleDir = module.guessModuleDir()
                 if (moduleDir != null) {
-                    getPubSpecConfig(module)?.let {
+                    calculatePubspecConfigList(module).forEach {
                         folders.add(it)
                     }
                 }
@@ -42,8 +43,8 @@ object FileHelperNew {
     fun getAutoFolder(project: Project): MutableList<String> {
         var folderList = mutableListOf<String>()
 
-        val assets = getAssets(project)
-        for (config in assets) {
+        val configs = getPubspecConfigList(project)
+        for (config in configs) {
             val list = try {
                 readSetting(config, Constants.key_auto_folder) as MutableList<String>?
                     ?: mutableListOf()
@@ -72,11 +73,35 @@ object FileHelperNew {
     }
 
     @JvmStatic
-    fun getPubSpecConfig(module: Module): ModulePubSpecConfig? {
+    private fun calculatePubspecConfigList(module: Module): List<PubspecConfig> {
+        if (!FlutterModuleUtils.isFlutterModule(module)) {
+            return listOf()
+        }
+
+        val list = mutableListOf<PubspecConfig>()
+        val moduleDir = module.guessModuleDir()
+        val curModuleConfig = getSinglePubSpecConfig(moduleDir)
+        if (curModuleConfig != null) {
+            list.add(curModuleConfig)
+        }
+        moduleDir?.children?.forEach {
+            val pubSpecPath = "${it.path}/pubspec.yaml"
+            if (File(pubSpecPath).exists()) {
+                val config = getSinglePubSpecConfig(it)
+                if (config != null) {
+                    list.add(config)
+                }
+            }
+        }
+
+        return list
+    }
+
+    @JvmStatic
+    private fun getSinglePubSpecConfig(virtualFile: VirtualFile?): PubspecConfig? {
         try {
-            val moduleDir = module.guessModuleDir()
-            val pubRoot = PubRoot.forDirectory(moduleDir)
-            if (moduleDir != null && pubRoot != null) {
+            val pubRoot = PubRoot.forDirectory(virtualFile)
+            if (virtualFile != null && pubRoot != null) {
                 val fis = FileInputStream(pubRoot.pubspec.path)
                 val pubConfigMap = Yaml().load(fis) as? Map<String, Any>
                 if (pubConfigMap != null) {
@@ -84,7 +109,7 @@ object FileHelperNew {
                     (pubConfigMap["flutter"] as? Map<*, *>)?.let { configureMap ->
                         (configureMap["assets"] as? ArrayList<*>)?.let { list ->
                             for (path in list) {
-                                moduleDir.findFileByRelativePath(path as String)?.let {
+                                virtualFile.findFileByRelativePath(path as String)?.let {
                                     if (it.isDirectory) {
                                         val index = path.indexOf("/")
                                         val assetsPath = if (index == -1) {
@@ -92,8 +117,8 @@ object FileHelperNew {
                                         } else {
                                             path.substring(0, index)
                                         }
-                                        val assetVFile = moduleDir.findChild(assetsPath)
-                                            ?: moduleDir.createChildDirectory(this, assetsPath)
+                                        val assetVFile = virtualFile.findChild(assetsPath)
+                                            ?: virtualFile.createChildDirectory(this, assetsPath)
                                         if (!assetVFiles.contains(assetVFile)) {
                                             assetVFiles.add(assetVFile)
                                         }
@@ -106,10 +131,9 @@ object FileHelperNew {
                             }
                         }
                     }
-                    return ModulePubSpecConfig(
-                        module,
+                    return PubspecConfig(
+                        virtualFile,
                         pubRoot,
-                        assetVFiles,
                         pubConfigMap,
                     )
                 }
@@ -124,28 +148,19 @@ object FileHelperNew {
     /**
      * 读取配置
      */
-    private fun readSetting(config: ModulePubSpecConfig, key: String): Any? {
+    private fun readSetting(config: PubspecConfig, key: String): Any? {
         (config.map[Constants.key_config] as? Map<*, *>)?.let { configureMap ->
             return configureMap[key]
         }
         return null
     }
-
-
-    private fun VirtualFile.findOrCreateChildDir(requestor: Any, name: String): VirtualFile {
-        val child = findChild(name)
-        return child ?: createChildDirectory(requestor, name)
-    }
-
 }
 
 /**
  * 模块Flutter配置信息
  */
-data class ModulePubSpecConfig(
-    val module: Module,
+data class PubspecConfig(
+    val virtualFile: VirtualFile?,
     val pubRoot: PubRoot,
-    val assetVFiles: List<VirtualFile>,
     val map: Map<String, Any>,
-    val isFlutterModule: Boolean = FlutterModuleUtils.isFlutterModule(module)
 )

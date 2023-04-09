@@ -55,10 +55,7 @@ tasks.patchPluginXml {
             <h2>Flutter Code Helper</h2>
             <ul>
                 <h3>Introduction</h3>
-                <li>usage: You need to add the following to pubspec.yaml</a></li>
-                <br>code_helper:<br>
-                  # fill in the folders you need to automatically generate<br>
-                  auto_folder: ["assets/", "lib/widgets/"]
+                <li>Ability to automatically generate defined folders under assets configuration</a></li>
             </ul>
         """.trimIndent()
     )

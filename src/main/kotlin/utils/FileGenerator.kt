@@ -22,24 +22,24 @@ class FileGenerator(private val project: Project) {
      */
     fun buildYaml(file: VirtualFile) {
         saveChanges()
-        val modules = FileHelperNew.getAssets(project)
-        var module: ModulePubSpecConfig? = null
-        for (m in modules) {
-            if (file.path.startsWith(m.pubRoot.path)) {
-                module = m
+        val configList = FileHelperNew.getPubspecConfigList(project)
+        var config: PubspecConfig? = null
+        for (item in configList) {
+            if (file.path.startsWith(item.pubRoot.path)) {
+                config = item
                 break
             }
         }
-        if (module != null && FlutterModuleUtils.isFlutterModule(module.module)) {
+        if (config != null) {
             val paths = mutableListOf<String>()
-            val rootPath = "${module.pubRoot.path}/"
+            val rootPath = "${config.pubRoot.path}/"
             if (file.isDirectory) {
                 traversalDir(file, rootPath, paths)
             } else {
                 paths.add(file.path.removePrefix(rootPath))
             }
 
-            processWritePubspec(module, paths)
+            processWritePubspec(config, paths)
             showNotify("Flutter: Configuration complete.")
         } else {
             showNotify("This module is not flutter module")
@@ -48,16 +48,9 @@ class FileGenerator(private val project: Project) {
 
     fun autoBuildYaml() {
         saveChanges()
-        val modules = FileHelperNew.getAssets(project)
-        var module: ModulePubSpecConfig? = null
-        for (item in modules) {
-            if (FlutterModuleUtils.isFlutterModule(item.module)) {
-                module = item
-                break
-            }
-        }
-        if (module != null) {
-            val rootPath = "${module.pubRoot.path}/"
+        val configList = FileHelperNew.getPubspecConfigList(project)
+        for (config in configList) {
+            val rootPath = "${config.pubRoot.path}/"
             val paths = mutableListOf<String>()
             val folderList = FileHelperNew.getAutoFolder(project)
             if (folderList.isNotEmpty()) {
@@ -73,18 +66,19 @@ class FileGenerator(private val project: Project) {
                 paths[index] = if (!replaceValue.endsWith("/")) "$replaceValue/" else replaceValue
             }
 
-            processWritePubspec(module, paths)
+            processWritePubspec(config, paths)
         }
+
     }
 
-    private fun processWritePubspec(module: ModulePubSpecConfig, paths: MutableList<String>) {
+    private fun processWritePubspec(config: PubspecConfig, paths: MutableList<String>) {
         ApplicationManager.getApplication().invokeLater {
-            val moduleAssets = FileHelperNew.tryGetAssetsList(module.map)
+            val pubspecAssets = FileHelperNew.tryGetAssetsList(config.map)
             // 移除记录列表中, 已经存在的路径
-            if (moduleAssets != null) {
-                val moduleDir = module.module.guessModuleDir()
-                moduleAssets.removeIf {
-                    var parentPath = moduleDir?.path
+            if (pubspecAssets != null) {
+                val virtualFile = config.virtualFile
+                pubspecAssets.removeIf {
+                    var parentPath = virtualFile?.path
                     var path = it as String
                     path = path.removeSuffix(File.separator)
                     if (path.contains(File.separator)) {
@@ -96,11 +90,11 @@ class FileGenerator(private val project: Project) {
                     !asset.exists()
                 }
                 paths.removeIf {
-                    moduleAssets.contains(it)
+                    pubspecAssets.contains(it)
                 }
             }
 
-            val yamlFile = module.pubRoot.pubspec.toPsiFile(project) as? YAMLFile ?: return@invokeLater
+            val yamlFile = config.pubRoot.pubspec.toPsiFile(project) as? YAMLFile ?: return@invokeLater
             val psiElement = yamlFile.node.getChildren(null)
                 .firstOrNull()?.psi?.children?.firstOrNull()?.children?.firstOrNull { it.text.startsWith("flutter:") }
                 ?: return@invokeLater
@@ -109,7 +103,7 @@ class FileGenerator(private val project: Project) {
             WriteCommandAction.runWriteCommandAction(project) {
                 var assetsValue = yamlMapping.keyValues.firstOrNull { it.keyText == "assets" }
                 val stringBuilder = StringBuilder()
-                moduleAssets?.forEach {
+                pubspecAssets?.forEach {
                     stringBuilder.append("    - $it\n")
                 }
                 paths.forEach {

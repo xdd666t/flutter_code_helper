@@ -1,8 +1,13 @@
+import org.jetbrains.changelog.markdownToHTML
+
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.7.20"
     id("org.jetbrains.intellij") version "1.12.0"
+    // https://github.com/JetBrains/gradle-changelog-plugin
+    id("org.jetbrains.changelog") version "1.3.1"
 }
+
 
 group = "com.xdd"
 
@@ -49,17 +54,7 @@ tasks.patchPluginXml {
     sinceBuild.set("200")
     untilBuild.set("")
     pluginId.set("com.xdd.flutter_code_helper")
-
-    pluginDescription.set(
-        """
-            <h2>Flutter Code Helper</h2>
-            <ul>
-                <h3>Introduction</h3>
-                <li>Ability to automatically generate defined folders under assets configuration</a></li>
-            </ul>
-        """.trimIndent()
-    )
-
+    pluginDescription.set(markdownToHTML(File(rootDir, "README.md").readText()))
     changeNotes.set(
         """
             <h1>1.0</h1>

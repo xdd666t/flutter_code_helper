@@ -54,7 +54,7 @@ tasks.patchPluginXml {
     sinceBuild.set("200")
     untilBuild.set("")
     pluginId.set("com.xdd.flutter_code_helper")
-    pluginDescription.set(markdownToHTML(File(rootDir, "README.md").readText()))
+    pluginDescription.set(markdownToHTML(File(rootDir, "doc.md").readText()))
     changeNotes.set(
         """
             <h1>1.0</h1>
